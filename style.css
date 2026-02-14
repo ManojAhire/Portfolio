@@ -819,6 +819,75 @@ img {
   z-index: 2;
 }
 
+/* ── Real Project Card Styles ───────────────────────── */
+.project-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s cubic-bezier(.4, 0, .2, 1);
+}
+
+.project-card:hover .project-thumbnail img {
+  transform: scale(1.06);
+}
+
+.featured-project {
+  border: 1px solid rgba(203, 166, 247, 0.15);
+}
+
+.featured-project:hover {
+  border-color: rgba(203, 166, 247, 0.35);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3), 0 0 40px rgba(203, 166, 247, 0.06);
+}
+
+/* Tech Tag Colors */
+.tag-python {
+  background: rgba(55, 118, 171, 0.15);
+  color: #89b4fa;
+  border-color: rgba(55, 118, 171, 0.3);
+}
+
+.tag-tkinter {
+  background: rgba(166, 227, 161, 0.12);
+  color: #a6e3a1;
+  border-color: rgba(166, 227, 161, 0.25);
+}
+
+.tag-desktop {
+  background: rgba(250, 179, 135, 0.12);
+  color: #fab387;
+  border-color: rgba(250, 179, 135, 0.25);
+}
+
+/* Project Links */
+.project-links {
+  margin-top: 14px;
+  display: flex;
+  gap: 10px;
+}
+
+.project-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 16px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text-secondary);
+  border: 1px solid var(--glass-border);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.project-btn:hover {
+  background: rgba(168, 85, 247, 0.12);
+  color: var(--accent-1);
+  border-color: rgba(168, 85, 247, 0.3);
+  transform: translateY(-2px);
+}
+
 .projects-cta {
   text-align: center;
 }
