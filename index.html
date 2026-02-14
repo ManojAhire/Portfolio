@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manoj Ahire — Portfolio</title>
+  <meta name="description" content="Portfolio of Manoj Ahire — BTech CSE (AI/ML) student at Newton School of Technology, Pune. Skilled in Python, JavaScript, HTML/CSS, and Golang." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════ ANIMATED BACKGROUND ═══════════════════ -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- ═══════════════════ NAVIGATION ═══════════════════ -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>MA<span class="logo-bracket"> /&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════ HERO SECTION ═══════════════════ -->
+  <section id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow hero-glow--1"></div>
+    <div class="hero-glow hero-glow--2"></div>
+
+    <div class="hero-content">
+      <!-- Profile Photo -->
+      <div class="hero-photo-wrapper">
+        <div class="hero-photo-ring">
+          <img src="profile.jpg" alt="Manoj Ahire" class="hero-photo" />
+        </div>
+      </div>
+
+      <p class="hero-greeting">
+        <span class="wave">👋</span> Hello, I'm
+      </p>
+      <h1 class="hero-name">Manoj Ahire</h1>
+      <p class="hero-title">
+        <i class="fa-solid fa-code"></i>
+        <span class="typewriter" id="typewriter"></span><span class="cursor">|</span>
+      </p>
+      <p class="hero-tagline">
+        First-year BTech CSE (AI &amp; ML) student building the future, one line of code at a time.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fa-solid fa-rocket"></i> View My Work
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <i class="fa-solid fa-paper-plane"></i> Get in Touch
+        </a>
+      </div>
+
+      <!-- Social Bar -->
+      <div class="hero-socials">
+        <a href="#" class="social-icon" title="GitHub" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="#" class="social-icon" title="LinkedIn" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="#" class="social-icon" title="Instagram" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="mouse">
+        <div class="mouse-wheel"></div>
+      </div>
+      <p>Scroll Down</p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ ABOUT SECTION ═══════════════════ -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll">
+        <i class="fa-solid fa-user"></i> About Me
+      </h2>
+      <div class="about-grid animate-on-scroll">
+        <div class="about-card glass-card">
+          <div class="about-avatar">
+            <img src="profile.jpg" alt="Manoj Ahire" class="about-photo" />
+          </div>
+          <div class="about-text">
+            <p>
+              Hi! I'm <strong>Manoj Ahire</strong>, a passionate and driven first-year
+              <strong>BTech CSE (AI &amp; ML)</strong> student at
+              <strong>Newton School of Technology</strong>, Pune, Maharashtra.
+            </p>
+            <p>
+              I'm at the very beginning of my coding journey — and I'm excited about every step.
+              I've been sharpening my problem-solving skills with <strong>Python</strong> and
+              <strong>JavaScript</strong>, crafting web interfaces with <strong>HTML &amp; CSS</strong>,
+              and exploring <strong>Golang</strong> for systems-level thinking.
+            </p>
+            <p>
+              I believe in learning by building. This portfolio is my launchpad — and it will
+              grow as I do. Every project I complete will find its home right here.
+            </p>
+          </div>
+        </div>
+
+        <!-- Quick Info Cards -->
+        <div class="info-cards">
+          <div class="info-card glass-card">
+            <i class="fa-solid fa-location-dot"></i>
+            <h3>Location</h3>
+            <p>Pune, Maharashtra</p>
+          </div>
+          <div class="info-card glass-card">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h3>Studying</h3>
+            <p>BTech CSE (AI &amp; ML)</p>
+          </div>
+          <div class="info-card glass-card">
+            <i class="fa-solid fa-calendar-check"></i>
+            <h3>Year</h3>
+            <p>1st Year, 2nd Semester</p>
+          </div>
+          <div class="info-card glass-card">
+            <i class="fa-solid fa-bullseye"></i>
+            <h3>Goal</h3>
+            <p>Build &amp; Ship Real Projects</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ SKILLS SECTION ═══════════════════ -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll">
+        <i class="fa-solid fa-wand-magic-sparkles"></i> Skills &amp; Technologies
+      </h2>
+      <p class="section-subtitle animate-on-scroll">Technologies I've been learning and working with</p>
+
+      <div class="skills-grid animate-on-scroll">
+        <!-- Python -->
+        <div class="skill-card glass-card">
+          <div class="skill-icon" style="--accent: #3776AB;">
+            <i class="fa-brands fa-python"></i>
+          </div>
+          <h3>Python</h3>
+          <p>Problem Solving &amp; Logic</p>
+          <div class="skill-level">
+            <div class="skill-bar" style="--fill: 60%;"></div>
+          </div>
+        </div>
+
+        <!-- HTML -->
+        <div class="skill-card glass-card">
+          <div class="skill-icon" style="--accent: #E34F26;">
+            <i class="fa-brands fa-html5"></i>
+          </div>
+          <h3>HTML5</h3>
+          <p>Semantic Markup</p>
+          <div class="skill-level">
+            <div class="skill-bar" style="--fill: 70%;"></div>
+          </div>
+        </div>
+
+        <!-- CSS -->
+        <div class="skill-card glass-card">
+          <div class="skill-icon" style="--accent: #1572B6;">
+            <i class="fa-brands fa-css3-alt"></i>
+          </div>
+          <h3>CSS3</h3>
+          <p>Styling &amp; Layouts</p>
+          <div class="skill-level">
+            <div class="skill-bar" style="--fill: 65%;"></div>
+          </div>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="skill-card glass-card">
+          <div class="skill-icon" style="--accent: #F7DF1E;">
+            <i class="fa-brands fa-js"></i>
+          </div>
+          <h3>JavaScript</h3>
+          <p>DOM &amp; Problem Solving</p>
+          <div class="skill-level">
+            <div class="skill-bar" style="--fill: 50%;"></div>
+          </div>
+        </div>
+
+        <!-- Golang -->
+        <div class="skill-card glass-card">
+          <div class="skill-icon" style="--accent: #00ADD8;">
+            <i class="fa-brands fa-golang"></i>
+          </div>
+          <h3>Golang</h3>
+          <p>Systems &amp; Backend</p>
+          <div class="skill-level">
+            <div class="skill-bar" style="--fill: 40%;"></div>
+          </div>
+        </div>
+
+        <!-- Problem Solving -->
+        <div class="skill-card glass-card">
+          <div class="skill-icon" style="--accent: #9b59b6;">
+            <i class="fa-solid fa-brain"></i>
+          </div>
+          <h3>Problem Solving</h3>
+          <p>DSA &amp; Logical Thinking</p>
+          <div class="skill-level">
+            <div class="skill-bar" style="--fill: 55%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ PROJECTS SECTION ═══════════════════ -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll">
+        <i class="fa-solid fa-diagram-project"></i> Projects
+      </h2>
+      <p class="section-subtitle animate-on-scroll">My portfolio is just getting started — exciting projects coming soon!</p>
+
+      <div class="projects-grid animate-on-scroll">
+        <!-- Project Slot 1 -->
+        <div class="project-card glass-card coming-soon-card">
+          <div class="project-thumbnail">
+            <i class="fa-solid fa-flask"></i>
+          </div>
+          <div class="project-info">
+            <h3>Project #1</h3>
+            <p class="project-desc">Something cool is brewing… Check back soon!</p>
+            <div class="project-tags">
+              <span class="tag">Coming Soon</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Slot 2 -->
+        <div class="project-card glass-card coming-soon-card">
+          <div class="project-thumbnail">
+            <i class="fa-solid fa-microchip"></i>
+          </div>
+          <div class="project-info">
+            <h3>Project #2</h3>
+            <p class="project-desc">An AI/ML experiment on the way…</p>
+            <div class="project-tags">
+              <span class="tag">Coming Soon</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Slot 3 -->
+        <div class="project-card glass-card coming-soon-card">
+          <div class="project-thumbnail">
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <div class="project-info">
+            <h3>Project #3</h3>
+            <p class="project-desc">A web project taking shape…</p>
+            <div class="project-tags">
+              <span class="tag">Coming Soon</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects-cta animate-on-scroll">
+        <p><i class="fa-solid fa-circle-info"></i> I'm currently learning and building. This section will grow as I complete real projects.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ EDUCATION SECTION ═══════════════════ -->
+  <section id="education" class="section">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll">
+        <i class="fa-solid fa-graduation-cap"></i> Education
+      </h2>
+
+      <div class="timeline animate-on-scroll">
+        <div class="timeline-item">
+          <div class="timeline-dot">
+            <i class="fa-solid fa-school"></i>
+          </div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date">
+              <i class="fa-regular fa-calendar"></i> 2025 — Present
+            </span>
+            <h3>Newton School of Technology</h3>
+            <p class="timeline-degree">BTech — Computer Science &amp; Engineering (AI &amp; ML)</p>
+            <p class="timeline-location"><i class="fa-solid fa-map-pin"></i> Pune, Maharashtra</p>
+            <p class="timeline-detail">
+              Currently in <strong>1st Year, 2nd Semester</strong>. Focusing on fundamentals —
+              Data Structures, Algorithms, Web Development, and AI/ML foundations.
+            </p>
+          </div>
+        </div>
+
+        <!-- Future education slot -->
+        <div class="timeline-item timeline-future">
+          <div class="timeline-dot">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date"><i class="fa-regular fa-clock"></i> Future</span>
+            <h3>More to Come…</h3>
+            <p class="timeline-detail">Certifications, courses, and achievements will appear here.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ CONTACT / SOCIAL SECTION ═══════════════════ -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll">
+        <i class="fa-solid fa-envelope"></i> Get in Touch
+      </h2>
+      <p class="section-subtitle animate-on-scroll">Let's connect — I'm always open to new opportunities and conversations.</p>
+
+      <div class="contact-grid animate-on-scroll">
+        <!-- Social Media Bar -->
+        <div class="social-bar glass-card">
+          <h3><i class="fa-solid fa-share-nodes"></i> Find Me Online</h3>
+          <div class="social-links">
+            <a href="#" class="social-link-card" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub</span>
+              <small>Coming soon</small>
+            </a>
+            <a href="#" class="social-link-card" title="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+              <span>LinkedIn</span>
+              <small>Coming soon</small>
+            </a>
+            <a href="#" class="social-link-card" title="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+              <span>Instagram</span>
+              <small>Coming soon</small>
+            </a>
+            <a href="#" class="social-link-card" title="Twitter / X">
+              <i class="fa-brands fa-x-twitter"></i>
+              <span>Twitter / X</span>
+              <small>Coming soon</small>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Info Card -->
+        <div class="contact-info glass-card">
+          <h3><i class="fa-solid fa-address-card"></i> Quick Info</h3>
+          <ul class="contact-list">
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Pune, Maharashtra, India</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span>Newton School of Technology</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-laptop-code"></i>
+              <span>Open to internships &amp; collaborations</span>
+            </li>
+          </ul>
+          <a href="mailto:" class="btn btn-primary btn-contact">
+            <i class="fa-solid fa-paper-plane"></i> Send an Email
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ FOOTER ═══════════════════ -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="logo-bracket">&lt;</span>MA<span class="logo-bracket"> /&gt;</span>
+        </div>
+        <p class="footer-text">
+          Designed &amp; Built by <strong>Manoj Ahire</strong> · © 2025
+        </p>
+        <div class="footer-socials">
+          <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
