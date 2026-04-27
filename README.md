@@ -1,88 +1,51 @@
-# 🚀 Manoj Ahire — Portfolio
+# Manoj Ahire — Portfolio
 
-A modern, dark-themed personal portfolio website built with **HTML**, **CSS**, and **vanilla JavaScript**.
+Welcome to the source code for my personal portfolio! This project was originally built with Vanilla HTML, CSS, and JavaScript, but has now been fully refactored into a modern **React Application** powered by **Vite**.
 
-![Portfolio Preview](https://img.shields.io/badge/Status-Live-brightgreen) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+## 🚀 Overview
 
----
+I am a BTech CSE (AI & ML) student at Newton School of Technology (Pune, Maharashtra). This portfolio showcases my journey, from mastering Problem Solving with Python and Web Fundamentals, to building dynamic applications using React and exploring advanced concepts like DSA.
 
-## ✨ Features
+### Features
+- **Dynamic React Architecture:** Clean, modular components.
+- **Fluid UI & Animations:** Beautifully animated canvas background (fluid blobs and snake trails) ported perfectly into React hooks.
+- **Responsive Design:** A sleek, dark-themed, glassmorphism UI that adapts seamlessly to all devices.
+- **Project Showcase:** An ever-growing grid of my real-world projects, including AI integrations, React games, and full-stack utilities.
 
-- **Dark Theme** with vibrant purple → cyan gradient accents
-- **Glassmorphism Cards** with hover micro-animations
-- **Animated Fluid Background** — dark blobs drifting across the page
-- **Snake Trail Animation** — a glowing trail that slithers top-to-bottom and back, cycling through theme colors
-- **Typewriter Effect** on the hero section
-- **Scroll-triggered Animations** for all sections
-- **Fully Responsive** — mobile-first design with hamburger menu
-- **Profile Photo** with animated gradient ring
+## 🛠️ Built With
 
----
+- **Framework:** [React](https://reactjs.org/) + [Vite](https://vitejs.dev/)
+- **Styling:** Vanilla CSS (Glassmorphism & Flexbox/Grid layouts)
+- **Icons:** [Font Awesome](https://fontawesome.com/)
+- **Typography:** Google Fonts (Inter, Fira Code)
 
-## 🛠️ Tech Stack
+## 📦 Getting Started
 
-| Technology | Usage |
-|---|---|
-| HTML5 | Semantic page structure |
-| CSS3 | Custom properties, glassmorphism, grid, animations |
-| JavaScript | Canvas animations, IntersectionObserver, DOM manipulation |
-| Font Awesome | Icons |
-| Google Fonts | Inter + Fira Code typography |
+To run this project locally, follow these steps:
 
----
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/ManojAhire/Portfolio.git
+   ```
+2. **Navigate to the directory:**
+   ```bash
+   cd Portfolio
+   ```
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+4. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+5. Open your browser and visit `http://localhost:5173`.
 
-## 📁 Project Structure
+## 📬 Connect With Me
 
-```
-portfolio/
-├── index.html      # Main HTML page
-├── style.css       # All styles and animations
-├── script.js       # Background animation, nav, typewriter
-├── profile.jpg     # Profile photo
-└── README.md       # This file
-```
-
----
-
-## 🖥️ Sections
-
-1. **Hero** — Photo, name, typewriter roles, CTA buttons, social links
-2. **About** — Bio, quick info cards (location, college, year, goals)
-3. **Skills** — Python, HTML, CSS, JavaScript, Golang, Problem Solving
-4. **Projects** — Placeholder slots (coming soon!)
-5. **Education** — Timeline with Newton School of Technology
-6. **Contact** — Social media bar + quick contact info
-7. **Footer** — Copyright + social links
+- **GitHub:** [@ManojAhire](https://github.com/ManojAhire)
+- **Instagram:** [@the_manojahire](https://www.instagram.com/the_manojahire/)
+- **Email:** [manoj.332211.1@gmail.com](mailto:manoj.332211.1@gmail.com)
 
 ---
-
-## 🚀 Getting Started
-
-Just open `index.html` in any browser — no build tools needed!
-
-```bash
-# Clone the repo
-git clone https://github.com/ManojAhire/Portfolio.git
-
-# Open in browser
-open Portfolio/index.html
-```
-
----
-
-## 👤 About Me
-
-**Manoj Ahire**
-- 🎓 BTech CSE (AI & ML) — 1st Year, Newton School of Technology, Pune
-- 💻 Learning: Python, JavaScript, HTML/CSS, Golang
-- 🎯 Goal: Build & ship real-world projects
-
----
-
-## 📜 License
-
-This project is open source and available for personal use.
-
----
-
-> *Designed & Built by Manoj Ahire · 2025*
+*Designed & Built by Manoj Ahire · © 2026*
