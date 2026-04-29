@@ -23,6 +23,15 @@ export default function Projects() {
 
   const projectList = [
     {
+      title: 'Maths Exam Prep Hub',
+      icon: 'fa-calculator',
+      iconColor: '#f59e0b',
+      desc: 'An interactive math learning platform built from written study notes. Features high-fidelity LaTeX rendering, quizzes, and an exam simulator. Created using vibe coding.',
+      tags: ['React', 'LMS', 'Vibe Coding'],
+      link: 'https://maths-exam-prep-hub.vercel.app/',
+      linkText: 'Live Demo'
+    },
+    {
       title: 'Pustak Notepad',
       icon: 'fa-book-open',
       iconColor: '#cba6f7',
